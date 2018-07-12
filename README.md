@@ -1,6 +1,6 @@
 # vagrant-tripleo-quickstart
 
-The `Vagrantfile` helps to automatically configure a virtual Libvirt lab environment for setting up a TripleO cloud. It can be used with the [TripleO Quickstart](https://docs.openstack.org/tripleo-quickstart/latest/ project) or a [manual installation of TripleO](https://ekultails.github.io/rootpages/openstack.html#id6).
+The `Vagrantfile` helps to automatically configure a virtual Libvirt lab environment for setting up a TripleO cloud. It can be used with the [TripleO Quickstart project](https://docs.openstack.org/tripleo-quickstart/latest/) or a [manual installation of TripleO](https://ekultails.github.io/rootpages/openstack.html#id6).
 
 ## Usage
 
