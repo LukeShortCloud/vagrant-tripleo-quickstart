@@ -60,3 +60,7 @@ The Undercloud can now be accessed for installation and setup.
 ```
 $ vagrant ssh undercloud
 ```
+
+## License
+
+Apache v2.0
