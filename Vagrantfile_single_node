@@ -1,0 +1,22 @@
+Vagrant.configure("2") do |config|
+
+    config.vm.box = "centos/7"
+    config.vm.network "private_network",
+        # The creation of private networks require 1 IP address to be assigned.
+        ip: "192.168.24.254",
+        # Disable DHCP.
+        libvirt__dhcp_enabled: false,
+        # Do not configure the network interfaces on the virtual machines.
+        auto_config: false
+
+    config.vm.provider "libvirt" do |libvirt|
+        libvirt.cpus = 4
+        libvirt.memory = 16384
+        libvirt.cpu_mode = "host-passthrough"
+    end
+
+  config.vm.define "tripleo" do |tripleo|
+    undercloud.vm.hostname = "tripleo"
+  end
+
+end
