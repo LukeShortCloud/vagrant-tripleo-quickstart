@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
         libvirt.cpus = 4
         libvirt.memory = 4096
         libvirt.cpu_mode = "host-passthrough"
+        libvirt.volume_cache = "none"
     end
 
   config.vm.define "undercloud" do |undercloud|
