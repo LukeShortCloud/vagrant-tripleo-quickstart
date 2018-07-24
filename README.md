@@ -10,11 +10,13 @@ Copy the desired Vagrant file to use.
 $ cp Vagrantfile_single_node Vagrantfile
 ```
 
+OR
+
 ```
 $ cp Vagrantfile_multi_node Vagrantfile
 ```
 
-## Disk Space
+## Disk Space (tripleo-quickstart only)
 
 tripleo-quickstart requires 120GB of disk space and vagrant-libvirt cannot automatically resize file systems so this needs to be done manually.
 
