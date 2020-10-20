@@ -6,14 +6,14 @@ The `Vagrantfile` helps to automatically configure a virtual Libvirt lab environ
 
 Copy the desired Vagrant file to use.
 
-```
-$ cp Vagrantfile_single_node Vagrantfile
-```
+Files:
 
-OR
+- single_node = 1 Standalone
+- multi_node = 1 Undercloud, 1 Controller, and 1 Compute
+- multi_node_low_memory = `multi_node` with resource allocations lowered. The TripleO deployment of both the Undercloud and Overcloud require 8 GB of swap to be enabled.
 
 ```
-$ cp Vagrantfile_multi_node Vagrantfile
+$ cp Vagrantfile_[single_node|multi_node|multi_node_low_memory] Vagrantfile
 ```
 
 ## Disk Space (tripleo-quickstart only)
